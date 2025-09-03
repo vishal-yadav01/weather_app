@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <input id="inputBox" type="text" placeholder="Enter location" />
+    <button id="search">Search</button>
+    <p id="res"></p>
+    <button id="refresh" style="display: none">Refresh</button>
+
+    <div id="data"></div>
+
+    <h2>Last 24 Hours</h2>
+    <div id="pastWeather" class="forecast-container"></div>
+
+    <h2>Next 24 Hours</h2>
+    <div id="futureWeather" class="forecast-container"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Input & Button Container */
+#inputBox,
+button {
+  padding: 12px 18px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  margin: 5px 5px 20px 5px;
+  transition: 0.3s;
+}
+
+#inputBox {
+  width: 250px;
+}
+
+#inputBox:focus {
+  box-shadow: 0 0 10px #00ffff;
+}
+
+button {
+  cursor: pointer;
+  background: #00c6ff;
+  color: #fff;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #0072ff;
+  transform: translateY(-3px);
+}
+
+/* Loader & Response */
+#res {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #ff6b6b;
+}
+
+/* Current Weather Card */
+#data {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 25px 30px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  min-width: 320px;
+  margin-bottom: 30px;
+}
+
+#data h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+#data p {
+  font-size: 18px;
+  margin: 6px 0;
+}
+
+/* Forecast Containers */
+h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #e0f7fa;
+}
+
+.forecast-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+/* Forecast Items */
+.forecast-item {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  padding: 15px 12px;
+  border-radius: 15px;
+  width: 120px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
+}
+
+.forecast-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.forecast-item p {
+  margin: 4px 0;
+  font-size: 15px;
+}
+
+/* Refresh Button */
+#refresh {
+  background: #ff6b6b;
+  color: #fff;
+  font-weight: bold;
+}
+
+#refresh:hover {
+  background: #ff4757;
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  #inputBox {
+    width: 180px;
+  }
+
+  .forecast-item {
+    width: 90px;
+    padding: 10px;
+  }
+
+  #data {
+    min-width: 260px;
+  }
+}
